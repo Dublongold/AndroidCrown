@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToMenuButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/balanceInfo"
+        android:background="@drawable/go_back_button_selector" />
+
+    <TextView
+        android:id="@+id/balanceInfo"
+        android:layout_width="184dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/balance_count"
+        android:gravity="center"
+        android:fontFamily="@font/brawler"
+        android:textStyle="bold"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/info_border" />
+
+    <TextView
+        android:id="@+id/betInfo"
+        android:layout_width="184dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bet_count"
+        android:gravity="center"
+        android:fontFamily="@font/brawler"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:background="@drawable/info_border" />
+
+    <TextView
+        android:id="@+id/autoSpinInfo"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/autospin_text"
+        android:gravity="center"
+        android:fontFamily="@font/brawler"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinButton"
+        android:background="@drawable/info_border" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceInfo">
+
+        <LinearLayout
+            android:id="@+id/slotsColumn1"
+            android:layout_width="96dp"
+            android:layout_height="283dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/play_column">
+
+            <ImageView
+                android:id="@+id/slot1"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                app:srcCompat="@drawable/poky_1" />
+            <ImageView
+                android:id="@+id/slot2"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/poky_1" />
+            <ImageView
+                android:id="@+id/slot3"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/poky_1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slotsColumn2"
+            android:layout_width="96dp"
+            android:layout_height="283dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/play_column">
+
+            <ImageView
+                android:id="@+id/slot4"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                app:srcCompat="@drawable/poky_1" />
+            <ImageView
+                android:id="@+id/slot5"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/poky_1" />
+            <ImageView
+                android:id="@+id/slot6"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/poky_1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slotsColumn3"
+            android:layout_width="96dp"
+            android:layout_height="283dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/play_column">
+
+            <ImageView
+                android:id="@+id/slot7"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                app:srcCompat="@drawable/poky_1" />
+            <ImageView
+                android:id="@+id/slot8"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/poky_1" />
+            <ImageView
+                android:id="@+id/slot9"
+                android:layout_width="72dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@drawable/poky_1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plusButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/betInfo"
+        app:layout_constraintTop_toTopOf="@+id/betInfo"
+        android:background="@drawable/plus_button_ripple" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/minusButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/betInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/betInfo"
+        android:background="@drawable/minus_button_ripple" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startAutoSpinButton"
+        android:layout_width="79dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinButton"
+        app:layout_constraintEnd_toStartOf="@+id/spinButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinButton"
+        android:background="@drawable/auto_spin_button_selector" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stopAutoSpinButton"
+        android:layout_width="79dp"
+        android:layout_height="52dp"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/spinButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinButton"
+        app:layout_constraintTop_toTopOf="@+id/spinButton"
+        android:background="@drawable/stop_button_selector" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/spinButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betInfo"
+        android:background="@drawable/spin_button_ripple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

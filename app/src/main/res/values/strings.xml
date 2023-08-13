@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidCrown</string>
+    <string name="play_pokies">PLAY POKIES</string>
+    <string name="play_slots">PLAY SLOTS</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="privacy_policy_title">PRIVACY POLICY</string>
+    <string name="bet_count">BET: %d</string>
+    <string name="balance_count">BALANCE: %d</string>
+    <string name="autospin_text">AUTOSPIN: %s</string>
+</resources>

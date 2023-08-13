@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="255dp"
+        android:layout_height="193dp"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/action_buttons_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playPokiesButton"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:background="@drawable/action_button_selector"
+            android:text="@string/play_pokies"
+            android:textColor="#1e1e1e"
+            android:textStyle="bold"
+            android:fontFamily="@font/brawler"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playSlotsButton"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:background="@drawable/action_button_selector"
+            android:text="@string/play_slots"
+            android:textColor="#1e1e1e"
+            android:textStyle="bold"
+            android:fontFamily="@font/brawler"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/privacyPolicyButton"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:background="@drawable/action_button_selector"
+            android:text="@string/privacy_policy"
+            android:textColor="#1e1e1e"
+            android:textStyle="bold"
+            android:fontFamily="@font/brawler"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

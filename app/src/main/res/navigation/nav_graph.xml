@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.androidcrown.views.MenuFragment"
+        android:label="MenuFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.example.androidcrown.views.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment" >
+    </fragment>
+    <action
+        android:id="@+id/goToPrivacy"
+        app:destination="@id/privacyPolicyFragment" />
+    <fragment
+        android:id="@+id/playPokiesFragment"
+        android:name="com.example.androidcrown.views.PlayPokiesFragment"
+        android:label="PlayPokiesFragment" />
+    <action
+        android:id="@+id/goToPokies"
+        app:destination="@id/playPokiesFragment"/>
+    <fragment
+        android:id="@+id/playSlotsFragment"
+        android:name="com.example.androidcrown.views.PlaySlotsFragment"
+        android:label="PlaySlotsFragment" />
+    <action
+        android:id="@+id/goToSlots"
+        app:destination="@id/playSlotsFragment"/>
+</navigation>
